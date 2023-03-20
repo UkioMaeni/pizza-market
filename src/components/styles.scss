@@ -1,0 +1,182 @@
+.header{
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-shadow: 0 2px 10px black ;
+  background: #97d2e1;
+  &-name{
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+    color: #de0a6b
+  }
+  &-info{
+    display: flex;
+    align-items: center;
+  }
+  &-logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  &-title{
+    display: flex;
+    align-items: center;
+  }
+  &-count{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 30px;
+    background: rgba(#868181,0.5);
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  &-profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 50px;
+  }
+  &-card{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  &-person{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+
+.navbar{
+  border-right: 1px solid #a8a1a1;
+  margin-top: 50px;
+  font-size: 25px;
+  &-title{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #a8a1a1;
+    &_el{
+      padding: 20px;
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+
+.body{
+  display: flex;
+}
+
+.curCatalog{
+  color:red;
+}
+
+.product{
+  box-shadow: 0 0 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+  &-add{
+    padding: 10px 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #a790d2;
+    border: 1px solid #e1a9a9;
+    margin: 30px 0;
+  }
+  &-name{
+    font-size: 25px;
+  }
+  &-img{
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+.listproduct{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 80px;
+}
+@keyframes modalV {
+  from{
+    width: 0;
+    height: 0;
+  }
+  to{
+    width: 50%;
+    height: 50%;
+  }
+
+}
+.modal{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  z-index:2;
+  font-size: 40px;
+  position: absolute;
+  &-buy{
+    background: #61dafb;
+    width: max-content;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 15px;
+  }
+  &-count{
+  }
+  &-el{
+    position: relative;
+    border-bottom: 1px solid #d0caca;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    & img{
+      width:50px;
+      height: 50px;
+
+
+    }
+    & div{
+      margin-left: 20px;
+      flex: 1;
+    }
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  &-wrapper{
+    animation: modalV .2s linear forwards;
+    background: white;
+    border-radius: 20px;
+    transition: all .2s linear;
+
+  }
+}
+
+.pl20{
+  padding-left: 70px;
+}
